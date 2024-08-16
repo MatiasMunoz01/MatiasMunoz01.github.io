@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 💛Te extraño Mi vida 💛</title>
+    <style>
+        .body {
+            background-color: fuchsia;
+            text-align: center;
+        }
+.body__tittle {
+    color: white;
+}
+
+.body__img {
+    width: 100%;
+    border-radius: 50%;
+}
+    </style>
+</head>
+<body class="body"> 
+ <h1 class="body__tittle">Me extrañas tu a mi? 🥺</h1>  
+ <img src="https://i.pinimg.com/474x/60/3f/16/603f1653125c3107bc20a5e7cfe63b86.jpg" alt="pollos love" class="body__img"/>
+ <button id="yes">si amor mio😍</button> 
+ <button id="no">no, feo😡</button>
+
+ <script>
+    const vutonSi = document.getElementById('yes');
+    const vutonNo = document.getElementById('no');
+
+    const vuamoos = () => {
+        alert('te voy a adorar toda la vida mi princesa💘');
+        alert('quiero abrazarte mucho mucho en este momento😕');
+        location.href = 'https://www.youtube.com/watch?v=98Akpf1ph2o';
+    }
+
+    const evitarNo = () => {
+        vutonNo.style.position = 'absolute';
+        vutonNo.style.top = (Math.random() * window.innerHeight) + 'px';
+        vutonNo.style.left = (Math.random() * window.innerWidth) + 'px';
+    }
+
+    vutonSi.addEventListener('click',vuamoos);
+    vutonNo.addEventListener('mouseover',evitarNo);
+ </script>
+</body>
+</html>
